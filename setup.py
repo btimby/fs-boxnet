@@ -6,18 +6,16 @@ name = 'boxnetfs'
 version = '0.1'
 release = '1'
 versrel = version + '-' + release
+readme = 'README.rst'
 download_url = 'https://github.com/downloads/btimby/fs-boxnet' \
                            '/' + name + '-' + versrel + '.tar.gz'
-description = """\
-A pyFilesystem backend for the box.net API.
-"""
-
+long_description = file(readme).read()
 
 setup(
     name = name,
     version = versrel,
     description = description,
-    long_description = description,
+    long_description = long_description,
     author = 'Ben Timby',
     author_email = 'btimby@gmail.com',
     maintainer = 'Ben Timby',
